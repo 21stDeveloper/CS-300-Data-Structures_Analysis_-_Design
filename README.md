@@ -93,3 +93,27 @@ This project demonstrates:
 - File parsing and validation
 - Runtime efficiency analysis
 - Clean, modular C++ program design
+
+---
+
+# Module Eight Reflection
+
+## What problem were you solving?
+
+In this course, I developed an advising assistance program for ABC University. The goal was to design and implement a system that could efficiently load, store, and retrieve course information. The program needed to print a sorted list of courses and display detailed information about individual courses, including prerequisites.
+
+## How did you approach the problem?
+
+I approached the problem by first analyzing different data structures (vector, hash table, and binary search tree) and evaluating their runtime and memory performance. Understanding how data structures affect efficiency was critical because the application required both fast lookups and sorted output. Based on runtime analysis, I selected a tree-based structure (`std::map`) to efficiently maintain sorted order while supporting fast search operations.
+
+## How did you overcome roadblocks?
+
+One major challenge was managing file input and ensuring that course prerequisites were validated correctly. I implemented a two-pass file parsing strategy to first store all courses and then validate prerequisite existence. Debugging file path issues and understanding how the working directory affects program execution also strengthened my troubleshooting skills.
+
+## How has this project expanded your approach to designing software?
+
+This project reinforced the importance of planning before coding. Performing runtime analysis before implementation helped me make informed design decisions. I now think more carefully about scalability, efficiency, and long-term maintainability when choosing data structures.
+
+## How has this project evolved the way you write maintainable programs?
+
+I focused on modular design, meaningful naming conventions, input validation, and inline documentation. Separating functionality into helper functions improved readability and maintainability. I also became more intentional about error handling and ensuring the user experience is clear and predictable.
